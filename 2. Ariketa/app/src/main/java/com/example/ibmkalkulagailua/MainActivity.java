@@ -27,15 +27,19 @@ public class MainActivity extends AppCompatActivity {
         elementuakBilatu();
 
         kalkulatu.setOnClickListener(v -> {
-            double altuera = (Double.parseDouble(oinak.getText().toString())*12 + Double.parseDouble(hazbeteak.getText().toString())) * 0.0254;
-            double bmi = Double.parseDouble(pisua.getText().toString()) / (altuera * altuera);
-            bmi = (double) Math.round(bmi * 100) /100;
-            if(bmi < 18.5) {
-                textua.setText(bmi + " - Pisu gutxiegi duzu...");
-            } else if(bmi > 25) {
-                textua.setText(bmi + " - Pisu gehiegi duzu...");
-            } else {
-                textua.setText(bmi + " - Pisu egokia duzu!");
+            try {
+                double altuera = (Double.parseDouble(oinak.getText().toString()) * 12 + Double.parseDouble(hazbeteak.getText().toString())) * 0.0254;
+                double bmi = Double.parseDouble(pisua.getText().toString()) / (altuera * altuera);
+                bmi = (double) Math.round(bmi * 100) / 100;
+                if (bmi < 18.5) {
+                    textua.setText(bmi + " - Pisu gutxiegi duzu...");
+                } else if (bmi > 25) {
+                    textua.setText(bmi + " - Pisu gehiegi duzu...");
+                } else {
+                    textua.setText(bmi + " - Pisu egokia duzu!");
+                }
+            } catch (Exception e) {
+                textua.setText("Errore bat egon da!");
             }
         });
     }
