@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="50sp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/esquleto_diabolico"
+        android:layout_margin="8sp"
+        android:layout_width="100sp"
+        android:layout_height="100sp"/>
+
+    <TextView
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IBM Kalkulagailua"/>
+
+    <RadioGroup
+        android:layout_margin="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gizona"
+            android:id="@+id/gizona"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emakumea"
+            android:id="@+id/emakumea"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_margin="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Adina"
+        android:id="@+id/adina"/>
+
+    <LinearLayout
+        android:layout_margin="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Oinak"
+            android:id="@+id/oinak"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Hazbeteak"
+            android:id="@+id/hazbeteak"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_margin="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Pisua (kg)"
+        android:id="@+id/pisua"/>
+
+    <Button
+        android:layout_margin="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulatu"
+        android:id="@+id/kalkulatu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textua"/>
+
+</LinearLayout>
