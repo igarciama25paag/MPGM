@@ -31,12 +31,20 @@ public class MainActivity extends AppCompatActivity {
                 double altuera = (Double.parseDouble(oinak.getText().toString()) * 12 + Double.parseDouble(hazbeteak.getText().toString())) * 0.0254;
                 double bmi = Double.parseDouble(pisua.getText().toString()) / (altuera * altuera);
                 bmi = (double) Math.round(bmi * 100) / 100;
-                if (bmi < 18.5) {
-                    textua.setText(bmi + " - Pisu gutxiegi duzu...");
-                } else if (bmi > 25) {
-                    textua.setText(bmi + " - Pisu gehiegi duzu...");
+                if(Integer.parseInt(adina.getText().toString()) >= 18) {
+                    if (bmi < 18.5) {
+                        textua.setText(bmi + " - Pisu gutxiegi duzu...");
+                    } else if (bmi > 25) {
+                        textua.setText(bmi + " - Pisu gehiegi duzu...");
+                    } else {
+                        textua.setText(bmi + " - Pisu egokia duzu!");
+                    }
                 } else {
-                    textua.setText(bmi + " - Pisu egokia duzu!");
+                    if(gizona.isChecked()) {
+                        textua.setText(bmi + " - 18 urte baino gutxiago dituzunez, kontsultatu zure medikuarekin mutilentzako osasun-tarteak.");
+                    } else {
+                        textua.setText(bmi + " - 18 urte baino gutxiago dituzunez, kontsultatu zure medikuarekin neskentzako osasun-tarteak.");
+                    }
                 }
             } catch (Exception e) {
                 textua.setText("Errore bat egon da!");

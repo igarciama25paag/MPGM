@@ -29,7 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gizona"
-            android:id="@+id/gizona"/>
+            android:id="@+id/gizona"
+            android:checked="true"/>
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -43,7 +44,7 @@
         android:layout_margin="8sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:hint="Adina"
         android:id="@+id/adina"/>
 
