@@ -19,11 +19,21 @@
             android:textColor="@color/design_default_color_primary_variant"
             android:textSize="32sp" />
 
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aram_jatetxea"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_marginTop="8sp"
+            android:text="igarciama25paag@ikzubirimanteo.com" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/lehenengo_platerak_cardview"
             android:layout_width="200sp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/aram_jatetxea"
+            android:layout_below="@+id/email"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60sp">
 
