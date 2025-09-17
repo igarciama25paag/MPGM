@@ -12,10 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jatetxea">
         <activity
+            android:name=".Postreak"
+            android:exported="false"
+            android:label="Postreak"
+            android:parentActivityName=".Jatetxea" />
+        <activity
             android:name=".BigarrenPlaterak"
             android:exported="false"
             android:label="Bigarren Platerak"
-            android:parentActivityName=".Jatetxea"  />
+            android:parentActivityName=".Jatetxea" />
         <activity
             android:name=".LehenengoPlaterak"
             android:exported="false"
