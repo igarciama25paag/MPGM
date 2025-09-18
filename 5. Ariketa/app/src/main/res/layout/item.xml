@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/element_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/element_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/element_icon"
+            android:layout_toEndOf="@+id/element_icon"
+            android:text="Elementuko izenburua"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/element_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/element_title"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/element_icon"
+            android:paddingBottom="5dp"
+            android:text="Hau elementuko deskribapena izan litzake." />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
